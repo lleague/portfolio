@@ -27,7 +27,7 @@ h1 {font-size: 3em;
     font-weight: normal;}
 h2 {font-size: 1.5em}
 h3 {font-size: 1.2em; font-weight: bold;}
-h4 {font-size: 5em; font-weight: normal; color: #ccc;}
+h4 {font-size: 2.5em; font-weight: normal; color: #555;}
 h5 {font-size: 1.8em; font-weight: normal;}
 a {font-size: 1em;
     color: #f4f4f4;
@@ -88,12 +88,16 @@ b {display: inline-block;}
     cursor: pointer;
     color: #f4f4f4;
     }
+a.btn:hover {
+  color: #f4f4f4;
+}
+a.btn.gray {display: block; margin: auto;}
 .overlay {position: absolute;}
 .right {
     top: 10em;
     left: 61%;
     }
-
+.vertical_align_top {vertical-align: top;}
 
 .white {color: #f4f4f4;}
 .gray {color: #444;}
@@ -101,6 +105,7 @@ b {display: inline-block;}
 .italic {font-style: italic;}
 .underline {text-decoration: underline;}
 .center {text-align: center;}
+.centered {display: block; margin: auto;}
 .bold {font-weight: bold;}
 .inline_block {display: inline-block;}
 .inline{display: inline;}
@@ -132,7 +137,7 @@ span {display: inline;}
 .margin_one {margin: 1em;}
 .container h2 {padding-bottom: 2em;}
 .padding_top_one {padding-top: 1em;}
-.margin_top_one {margin-top: 1em;}
+
 .margin_top_half {margin-top: .5em}
 .margin_bottom_one {margin-bottom: 1em;}
 .margin_bottom_half {margin-bottom: .5em;}
@@ -166,13 +171,12 @@ span {display: inline;}
     padding: 1em;
     border-radius: 3px;
     }
-.gray_line {
-    border: 10px solid #ccc;
+.blue_line {
+    border: 10px solid #0283FF;
     border-top: none;
     border-right: none;
     border-bottom: none;
     padding-left: 1em;
-    margin-bottom: 3em;
     }
 .text_container {
     width: 90%;
@@ -215,8 +219,17 @@ script {display: none;}
     }
 .show_on_768 {display: none;}
 .show_on_575 {display: none;}
+.twenty {width: 20%;}
+.thirty {width: 30%;}
+.forty {width: 40%;}
+.forty_five {width: 45%;}
+.eighty {width: 80%;}
+.ninety {width: 90%;}
 
-
+.padding_lr_one_percent_half {padding-left: 1.5%; padding-right: 1.5%;}
+.padding_lr_one_percent {padding-left: 1%; padding-right: 1%;}
+.padding_bottom_two {padding-bottom: 1em;}
+.margin_top_one {margin-top: 1em;}
 /* Media Queries */
 @media only screen and (max-width: 1350px){
     h1 {font-size: 2.5em;}
@@ -281,12 +294,14 @@ script {display: none;}
     .text_wrapper p {font-size: .95em;}
     h1 {font-size: 3em;}
     h2 {font-size: 2em;}
+    h4 {font-size: 1.5em;}
     .container.center h2 {padding-bottom: .5em;}
     .white_background {width: 95%;}
     .white_background h2 {font-size: 1.2em;}
     .gray_box {padding: .5em;}
     .colorful_background {height: 3700px;}
     .right {top: 65%; left: 7%;}
+    .forty_five, .thirty {width: 95%;}
 }
 @media only screen and (max-width: 768px){
     .container.center {left: 22%;}
