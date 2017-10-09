@@ -42,11 +42,10 @@ b {display: inline-block;}
 
 /* Buttons and interactions */
 
-.btn {
+.btn, .btn_double {
     text-align: center;
     font-weight: bold;
     padding: .25em 1em;
-    width: inherit;
     border: 2px solid #0283FF;
     display: inline-block;
     margin-right: .25em;
@@ -60,6 +59,8 @@ b {display: inline-block;}
     z-index: 3;
     padding-top: 4px;
   }
+.pink {border: 2px solid #ea2475;}
+.pink:hover {background: #ea2475;}
 
 .rainbowfill {
     background: #3ECEB2; /* For browsers that do not support gradients */
@@ -82,16 +83,18 @@ b {display: inline-block;}
 
 .space_left {padding-left: 2em;}
 
-.btn:hover {
+.btn:hover, .btn.pink:hover {
     background-color: #0283FF;
     border-color: #0283FF;
     cursor: pointer;
     color: #f4f4f4;
     }
+.pink:hover {background-color: #ea2475; border-color: #ea2475;}
+
 a.btn:hover {
   color: #f4f4f4;
 }
-a.btn.gray {display: block; margin: auto;}
+a.btn.gray {margin: auto;}
 .overlay {position: absolute;}
 .right {
     top: 10em;
@@ -230,6 +233,7 @@ script {display: none;}
 .padding_lr_one_percent {padding-left: 1%; padding-right: 1%;}
 .padding_bottom_two {padding-bottom: 1em;}
 .margin_top_one {margin-top: 1em;}
+
 /* Media Queries */
 @media only screen and (max-width: 1350px){
     h1 {font-size: 2.5em;}
@@ -266,7 +270,7 @@ script {display: none;}
     .transluscent_black {width: 55%; min-width: 500px;}
     .text_wrapper {padding: 1em;}
     .text_wrapper p {font-size: .8em; font-weight: bold;}
-    p.italic {font-size: .9em; font-weight: bold;}
+    p.italic {font-size: .9em;}
     #resume p, p {font-size: .85em;}
     h1 {font-size: 2em;}
     h2 {font-size: 1em;}
@@ -277,7 +281,8 @@ script {display: none;}
     .container {top: 1em;}
 }
 @media only screen and (max-width: 830px){
-  .btn {padding: 1em 0; border: 3px solid #0283ff; width: 50px; height: 20px; border-radius: 40px;}
+  .btn, .btn_double {padding: 1em 0; border: 3px solid #0283ff; width: 50px; height: 20px; border-radius: 40px;}
+  .btn_double {width: 65px; height: 30px; border-radius: 50px; padding-top: 1.5em;}
   .full_width_header {height: 64px;}
   .right {top: 7em;}
   a.btn {font-size: .8em;}
@@ -358,7 +363,7 @@ script {display: none;}
   h1 {font-size: 1.5em;}
   h2 {font-size: 1em;}
   h3 {font-size: .9em;}
-  .transluscent_black {min-width: 190px;}
+  .transluscent_black {min-width: 160px;}
   #resume p, p {font-size: .65em;}
   .container.center {width: 250px; left: 13%;}
   .skill_wrapper_left p {font-size: .65em;}
